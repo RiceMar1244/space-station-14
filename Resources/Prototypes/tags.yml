@@ -804,6 +804,9 @@
   id: PrisonUniform
 
 - type: Tag
+  id: ProtoKineticTechPart
+
+- type: Tag
   id: ProximitySensor
 
 - type: Tag

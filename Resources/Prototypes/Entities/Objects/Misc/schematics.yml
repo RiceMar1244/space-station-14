@@ -1,0 +1,46 @@
+- type: entity
+  parent: BaseItem
+  id: BaseSchematic
+  name: schematic
+  abstract: true
+  components:
+  - type: Schematic
+  - type: Item
+    size: 10
+  - type: Foldable
+    folded: true
+  - type: Sprite
+    sprite: Objects/Misc/schematics.rsi
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.FoldedVisuals.State:
+        foldedLayer:
+          True: {visible: true}
+          False: {visible: false}
+        unfoldedLayer:
+          True: {visible: false}
+          False: {visible: true}
+        planLayer:
+          True: {visible: false}
+          False: {visible: true}
+
+
+- type: entity
+  parent: BaseSchematic
+  id: ProtoKineticAcceleratorSchematic
+  name: proto-kinetic accelerator schematic
+  description: A schematic for building a proto-kinetic accelerator using a proto-kinetic charger. The first step involves 5 steel sheets. #automate this maybe
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/schematics.rsi
+    layers:
+    - state: sheet-folded_NT
+      map: ["foldedLayer"]
+      visible: false
+    - state: sheet-unfolded_NT
+      map: ["unfoldedLayer"]
+    - state: plan_pka
+      map: ["planLayer"]
+  - type: Schematic
+    prototype: WeaponProtoKineticAccelerator
