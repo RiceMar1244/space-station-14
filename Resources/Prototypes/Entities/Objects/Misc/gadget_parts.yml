@@ -4,7 +4,7 @@
   name: proto-kinetic charger
   components:
   - type: Sprite
-    sprite: Objects/Misc/technology_parts.rsi
+    sprite: Objects/Misc/gadget_parts.rsi
     state: protokinetic
   - type: Item
     size: 5
