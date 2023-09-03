@@ -46,6 +46,7 @@
 
 - type: entity
   name: retro laser blaster
+  suffix: Full
   parent: BaseWeaponBatterySmall
   id: WeaponLaserGun
   description: A weapon using light amplified by the stimulated emission of radiation.
@@ -66,9 +67,23 @@
     steps: 5
     zeroVisible: true
   - type: Appearance
+  - type: Construction
+    graph: WeaponLaserGun
+    node: retrolaserblaster
+
+- type: entity
+  name: retro laser blaster
+  suffix: Empty
+  parent: WeaponLaserGun
+  id: WeaponLaserGunEmpty
+  components:
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 0
 
 - type: entity
   name: makeshift laser pistol
+  suffix: Full
   parent: BaseWeaponBatterySmall
   id: WeaponMakeshiftLaser
   description: Better pray it won't burn your hands off.
@@ -89,9 +104,23 @@
   - type: Battery
     maxCharge: 500
     startingCharge: 500
+  - type: Construction
+    graph: WeaponMakeshiftLaser
+    node: makeshiftlaserpistol
+
+- type: entity
+  name: makeshift laser pistol
+  suffix: Empty
+  parent: WeaponMakeshiftLaser
+  id: WeaponMakeshiftLaserEmpty
+  components:
+  - type: Battery
+    maxCharge: 500
+    startingCharge: 0
 
 - type: entity
   name: laser rifle
+  suffix: Full
   parent: BaseWeaponBattery
   id: WeaponLaserCarbine
   description: Favoured by Nanotrasen Security for being cheap and easy to use.
@@ -113,9 +142,23 @@
   - type: HitscanBatteryAmmoProvider
     proto: RedLaser
     fireCost: 62.5
+  - type: Construction
+    graph: WeaponLaserCarbine
+    node: laserrifle
+
+- type: entity
+  name: laser rifle
+  suffix: Empty
+  parent: WeaponLaserCarbine
+  id: WeaponLaserCarbineEmpty
+  components:
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 0
 
 - type: entity
   name: practice laser rifle
+  suffix: Full
   parent: WeaponLaserCarbine
   id: WeaponLaserCarbinePractice
   description: This modified laser rifle fires harmless beams in the 40-watt range, for target practice.
@@ -125,7 +168,19 @@
     fireCost: 62.5
 
 - type: entity
+  name: practice laser rifle
+  suffix: Empty
+  parent: WeaponLaserCarbinePractice
+  id: WeaponLaserCarbinePracticeEmpty
+  components:
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 0
+
+
+- type: entity
   name: pulse pistol
+  suffix: Full
   parent: BaseWeaponBatterySmall
   id: WeaponPulsePistol
   description: A state of the art energy pistol favoured as a sidearm by the NT-ERT operatives.
@@ -154,7 +209,18 @@
     startingCharge: 2000
 
 - type: entity
+  name: pulse pistol
+  suffix: Empty
+  parent: WeaponPulsePistol
+  id: WeaponPulsePistolEmpty
+  components:
+  - type: Battery
+    maxCharge: 2000
+    startingCharge: 0
+
+- type: entity
   name: pulse carbine
+  suffix: Full
   parent: BaseWeaponBattery
   id: WeaponPulseCarbine
   description: A high tech energy carbine favoured by the NT-ERT operatives.
@@ -185,7 +251,18 @@
     startingCharge: 5000
 
 - type: entity
+  name: pulse carbine
+  suffix: Empty
+  parent: WeaponPulseCarbine
+  id: WeaponPulseCarbineEmpty
+  components:
+  - type: Battery
+    maxCharge: 5000
+    startingCharge: 0
+
+- type: entity
   name: pulse rifle
+  suffix: Full
   parent: BaseWeaponBattery
   id: WeaponPulseRifle
   description: A weapon that is almost as infamous as its users.
@@ -212,7 +289,18 @@
     startingCharge: 40000
 
 - type: entity
+  name: pulse rifle
+  suffix: Empty
+  parent: WeaponPulseRifle
+  id: WeaponPulseRifleEmpty
+  components:
+  - type: Battery
+    maxCharge: 40000
+    startingCharge: 0
+
+- type: entity
   name: laser cannon
+  suffix: Full
   parent: BaseWeaponBattery
   id: WeaponLaserCannon
   description: A heavy duty, high powered laser weapon.
@@ -234,9 +322,23 @@
   - type: HitscanBatteryAmmoProvider
     proto: RedHeavyLaser
     fireCost: 100
+  - type: Construction
+    graph: WeaponLaserCannon
+    node: lasercannon
+
+- type: entity
+  name: laser cannon
+  suffix: Empty
+  parent: WeaponLaserCannon
+  id: WeaponLaserCannonEmpty
+  components:
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 0
 
 - type: entity
   name: x-ray cannon
+  suffix: Full
   parent: BaseWeaponBattery
   id: WeaponXrayCannon
   description: An experimental weapon that uses concentrated x-ray energy against its target.
@@ -264,7 +366,18 @@
   - type: Appearance
 
 - type: entity
+  name: x-ray cannon
+  suffix: Empty
+  parent: WeaponXrayCannon
+  id: WeaponXrayCannonEmpty
+  components:
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 0
+
+- type: entity
   name: disabler
+  suffix: Full
   parent: BaseWeaponBatterySmall
   id: WeaponDisabler
   description: A self-defense weapon that exhausts organic targets, weakening them until they collapse.
@@ -299,7 +412,18 @@
     - type: Appearance
 
 - type: entity
+  name: disabler
+  suffix: Empty
+  parent: WeaponDisabler
+  id: WeaponDisablerEmpty
+  components:
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 0
+
+- type: entity
   name: practice disabler
+  suffix: Full
   parent: WeaponDisabler
   id: WeaponDisablerPractice
   description: A self-defense weapon that exhausts organic targets, weakening them until they collapse. This one has been undertuned for cadets.
@@ -322,7 +446,18 @@
       fireCost: 100
 
 - type: entity
+  name: practice disabler
+  suffix: Empty
+  parent: WeaponDisablerPractice
+  id: WeaponDisablerPracticeEmpty
+  components:
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 0
+
+- type: entity
   name: taser
+  suffix: Full
   parent: BaseWeaponBatterySmall
   id: WeaponTaser
   description: A low-capacity, energy-based stun gun used by security teams to subdue targets at range.
@@ -357,7 +492,18 @@
   - type: Appearance
 
 - type: entity
+  name: taser
+  suffix: Empty
+  parent: WeaponTaser
+  id: WeaponTaserEmpty
+  components:
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 0
+
+- type: entity
   name: antique laser pistol
+  suffix: Full
   parent: BaseWeaponBatterySmall
   id: WeaponAntiqueLaser
   description: This is an antique laser pistol. All craftsmanship is of the highest quality. It is decorated with assistant leather and chrome. The object menaces with spikes of energy.
@@ -391,9 +537,23 @@
     - HighRiskItem
   - type: StaticPrice
     price: 750
+  - type: Construction
+    graph: WeaponAntiqueLaser
+    node: antiquelaserpistol
+
+- type: entity
+  name: antique laser pistol
+  suffix: Empty
+  parent: WeaponAntiqueLaser
+  id: WeaponAntiqueLaserEmpty
+  components:
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 0
 
 - type: entity
   name: advanced laser pistol
+  suffix: Full
   parent: BaseWeaponBatterySmall
   id: WeaponAdvancedLaser
   description: An experimental high-energy laser pistol with a self-charging nuclear battery.
@@ -426,6 +586,19 @@
   - type: Appearance
   - type: StaticPrice
     price: 63
+  - type: Construction
+    graph: WeaponAdvancedLaser
+    node: advancedlaserpistol
+
+- type: entity
+  name: advanced laser pistol
+  suffix: Empty
+  parent: WeaponAdvancedLaser
+  id: WeaponAdvancedLaserEmpty
+  components:
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 10
 
 
 - type: entity

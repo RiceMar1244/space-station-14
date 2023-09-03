@@ -7,10 +7,16 @@
   - type: Schematic
   - type: Item
     size: 10
-  - type: Foldable
-    folded: true
   - type: Sprite
     sprite: Objects/Misc/schematics.rsi
+
+- type: entity
+  parent: BaseSchematic
+  id: BaseSchematicFoldable
+  abstract: true
+  components:
+  - type: Foldable
+    folded: true
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -25,22 +31,78 @@
           True: {visible: false}
           False: {visible: true}
 
-
 - type: entity
-  parent: BaseSchematic
+  parent: BaseSchematicFoldable
   id: ProtoKineticAcceleratorSchematic
   name: proto-kinetic accelerator schematic
-  description: A schematic for building a proto-kinetic accelerator using a proto-kinetic charger. The first step involves 5 steel sheets. #automate this maybe
+  description: A schematic for building a proto-kinetic accelerator using a proto-kinetic charger. The first step is to build a frame for the device using steel. #automate this maybe
   components:
   - type: Sprite
     sprite: Objects/Misc/schematics.rsi
     layers:
-    - state: sheet-folded_NT
+    - state: sheet-folded_nanotrasen
       map: ["foldedLayer"]
       visible: false
-    - state: sheet-unfolded_NT
+    - state: sheet-unfolded_nanotrasen
       map: ["unfoldedLayer"]
     - state: plan_pka
       map: ["planLayer"]
   - type: Schematic
     prototype: WeaponProtoKineticAccelerator
+
+- type: entity
+  parent: BaseSchematicFoldable
+  id: LaserCarbineSchematic
+  name: laser rifle schematic
+  description: A schematic for building a laser rifle using a ray caster. The first step is to build a frame for the device using steel.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/schematics.rsi
+    layers:
+    - state: sheet-folded_nanotrasen
+      map: ["foldedLayer"]
+      visible: false
+    - state: sheet-unfolded_nanotrasen
+      map: ["unfoldedLayer"]
+    - state: plan_lasercarbine
+      map: ["planLayer"]
+  - type: Schematic
+    prototype: WeaponLaserCarbine
+
+- type: entity
+  parent: BaseSchematicFoldable
+  id: AdvancedLaserSchematic
+  name: advanced laser pistol schematic
+  description: A schematic for building an advanced laser pistol using a ray caster. The first step is to build a frame for the device using steel.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/schematics.rsi
+    layers:
+    - state: sheet-folded_nanotrasen
+      map: ["foldedLayer"]
+      visible: false
+    - state: sheet-unfolded_nanotrasen
+      map: ["unfoldedLayer"]
+    - state: plan_advancedlaser
+      map: ["planLayer"]
+  - type: Schematic
+    prototype: WeaponAdvancedLaser
+
+- type: entity
+  parent: BaseSchematicFoldable
+  id: LaserCannonSchematic
+  name: laser cannon schematic
+  description: A schematic for building a laser cannon using a ray caster. The first step is to build a frame for the device using steel.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/schematics.rsi
+    layers:
+    - state: sheet-folded_nanotrasen
+      map: ["foldedLayer"]
+      visible: false
+    - state: sheet-unfolded_nanotrasen
+      map: ["unfoldedLayer"]
+    - state: plan_lasercannon
+      map: ["planLayer"]
+  - type: Schematic
+    prototype: WeaponLaserCannon

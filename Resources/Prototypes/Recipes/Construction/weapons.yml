@@ -120,13 +120,78 @@
   objectType: Item
 
 - type: construction
-  hide: false
+  hide: true
   name: proto-kinetic accelerator
   id: WeaponProtoKineticAccelerator
   graph: WeaponProtoKineticAccelerator
   startNode: start
   targetNode: pka
   category: construction-category-weapons
-  description: A proto-kinetic accelerator.
   icon: { sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: advanced laser pistol
+  id: WeaponAdvancedLaser
+  graph: WeaponAdvancedLaser
+  startNode: start
+  targetNode: advancedlaserpistol
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi , state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: antique laser pistol
+  id: WeaponAntiqueLaser
+  graph: WeaponAntiqueLaser
+  startNode: start
+  targetNode: antiquelaserpistol
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Battery/antiquelasergun.rsi , state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: laser rifle
+  id: WeaponLaserCarbine
+  graph: WeaponLaserCarbine
+  startNode: start
+  targetNode: laserrifle
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi , state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: laser cannon
+  id: WeaponLaserCannon
+  graph: WeaponLaserCannon
+  startNode: start
+  targetNode: lasercannon
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi , state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: makeshift laser pistol
+  id: WeaponMakeshiftLaser
+  graph: WeaponMakeshiftLaser
+  startNode: start
+  targetNode: makeshiftlaserpistol
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Battery/makeshift.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: retro laser blaster
+  id: WeaponLaserGun
+  graph: WeaponLaserGun
+  startNode: start
+  targetNode: retrolaserblaster
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Battery/laser_retro.rsi, state: icon }
   objectType: Item

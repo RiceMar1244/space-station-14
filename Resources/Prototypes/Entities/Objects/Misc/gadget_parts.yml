@@ -11,3 +11,17 @@
   - type: Tag
     tags:
       - ProtoKineticTechPart
+
+- type: entity
+  parent: BaseItem
+  id: RayCaster
+  name: ray caster
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/gadget_parts.rsi
+    state: laser
+  - type: Item
+    size: 5
+  - type: Tag
+    tags:
+      - LaserTechPart

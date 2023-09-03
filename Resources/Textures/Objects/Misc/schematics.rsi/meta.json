@@ -7,8 +7,15 @@
         "y": 32
     },
     "states": [
-        { "name": "sheet-unfolded_NT" },
-        { "name": "sheet-folded_NT" },
-        { "name": "plan_pka"}
+        { "name": "sheet-unfolded_nanotrasen" },
+        { "name": "sheet-folded_nanotrasen" },
+        { "name": "sheet-unfolded_syndicate" },
+        { "name": "sheet-folded_syndicate" },
+        { "name": "sheet-unfolded_cybersun" },
+        { "name": "sheet-folded_cybersun" },
+        { "name": "plan_pka" },
+        { "name": "plan_lasercarbine" },
+        { "name": "plan_advancedlaser" },
+        { "name": "plan_lasercannon" }
     ]
 }
