@@ -8,7 +8,7 @@ namespace Content.Shared.Schematics;
 /// Used for starting a certain item crafting recipe through activating schematics
 /// </summary>
 [RegisterComponent]
-public sealed class SchematicComponent : Component
+public sealed partial class SchematicComponent : Component
 {
     [DataField("prototype", customTypeSerializer: typeof(PrototypeIdSerializer<ConstructionPrototype>))]
     public string? Prototype { get; private set; }

@@ -23,7 +23,7 @@ public abstract class SharedSchematicSystem : EntitySystem
 
     public bool TryActivateSchematic(EntityUid uid, SchematicComponent schematic)
     {
-        if (TryComp<FoldableComponent>(uid, out var fold) && fold.IsFolded) return false;
+        if (TryComp<FoldableComponent>(uid, out var foldcomp) && foldcomp.IsFolded) return false;
 
         ActivateSchematic(uid, schematic);
         return true;
