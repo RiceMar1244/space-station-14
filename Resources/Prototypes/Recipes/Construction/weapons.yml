@@ -118,3 +118,113 @@
   description: Crude and falling apart. Why would you make this?
   icon: { sprite: Objects/Weapons/Melee/shields.rsi, state: makeshift-icon }
   objectType: Item
+
+- type: construction
+  hide: true
+  name: proto-kinetic accelerator
+  id: WeaponProtoKineticAccelerator
+  graph: WeaponProtoKineticAccelerator
+  startNode: start
+  targetNode: pka
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: advanced laser pistol
+  id: WeaponAdvancedLaser
+  graph: WeaponAdvancedLaser
+  startNode: start
+  targetNode: advancedlaserpistol
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi , state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: antique laser pistol
+  id: WeaponAntiqueLaser
+  graph: WeaponAntiqueLaser
+  startNode: start
+  targetNode: antiquelaserpistol
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Battery/antiquelasergun.rsi , state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: laser rifle
+  id: WeaponLaserCarbine
+  graph: WeaponLaserCarbine
+  startNode: start
+  targetNode: laserrifle
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi , state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: laser cannon
+  id: WeaponLaserCannon
+  graph: WeaponLaserCannon
+  startNode: start
+  targetNode: lasercannon
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi , state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: makeshift laser pistol
+  id: WeaponMakeshiftLaser
+  graph: WeaponMakeshiftLaser
+  startNode: start
+  targetNode: makeshiftlaserpistol
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Battery/makeshift.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: retro laser blaster
+  id: WeaponLaserGun
+  graph: WeaponLaserGun
+  startNode: start
+  targetNode: retrolaserblaster
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Battery/laser_retro.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: cobra
+  id: WeaponPistolCobra
+  graph: WeaponPistolCobra
+  startNode: start
+  targetNode: cobra
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Pistols/cobra.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: viper
+  id: WeaponPistolViper
+  graph: WeaponPistolViper
+  startNode: start
+  targetNode: viper
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Pistols/viper.rsi, state: icon }
+  objectType: Item
+
+- type: construction
+  hide: false
+  name: mk58
+  id: WeaponPistolMk58
+  graph: WeaponPistolMk58
+  startNode: start
+  targetNode: mk58
+  category: construction-category-weapons
+  icon: { sprite: Objects/Weapons/Guns/Pistols/mk58.rsi, state: icon }
+  objectType: Item

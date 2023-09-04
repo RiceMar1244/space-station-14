@@ -40,6 +40,12 @@
 	{
 	  "name": "equipped-BELT",
 	  "directions": 4
-	}
+	},
+    {
+        "name": "frame_0"
+    },
+    {
+        "name": "frame_1"
+    }
     ]
 }

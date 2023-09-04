@@ -23,6 +23,9 @@
   id: Baguette
 
 - type: Tag
+  id: BallisticsTechPart
+
+- type: Tag
   id: Balloon
 
 - type: Tag
@@ -617,6 +620,9 @@
   id: Knife
 
 - type: Tag
+  id: LaserTechPart
+
+- type: Tag
   id: LavaBrig
 
 - type: Tag
@@ -802,6 +808,9 @@
 
 - type: Tag
   id: PrisonUniform
+
+- type: Tag
+  id: ProtoKineticTechPart
 
 - type: Tag
   id: ProximitySensor

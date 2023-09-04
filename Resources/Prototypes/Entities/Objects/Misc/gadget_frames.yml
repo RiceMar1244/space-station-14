@@ -1,0 +1,218 @@
+- type: entity
+  parent: BaseItem
+  id: ProtoKineticAcceleratorFrame
+  name: proto-kinetic accelerator frame
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Basic/kinetic_accelerator.rsi
+    layers:
+    - state: frame_0
+      map: [ "enum.ConstructionVisuals.Layer" ]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          wiringMissing: { state: frame_0 }
+          platingUnwelded: { state: frame_1 }
+          lightMissing: { state: frame_2 }
+          lightUnscrewed: { state: frame_3 }
+          chargerMissing: { state: frame_4 }
+          panelUnscrewed: { state: frame_5 }
+  - type: Item
+    size: 30
+  - type: Construction
+    graph: WeaponProtoKineticAccelerator
+    node: wiringMissing
+
+- type: entity
+  parent: BaseItem
+  id: AdvancedLaserFrame
+  name: advanced laser pistol frame
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
+    layers:
+    - state: frame_0
+      map: [ "enum.ConstructionVisuals.Layer" ]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          wiresMissing: { state: frame_0 }
+          casterMissing: { state: frame_1 }
+          casterUnsecured: { state: frame_2 }
+          caseMissing: { state: frame_2 }
+  - type: Item
+    size: 30
+  - type: Construction
+    graph: WeaponAdvancedLaser
+    node: wiresMissing
+
+- type: entity
+  parent: BaseItem
+  id: AntiqueLaserFrame
+  name: antique laser pistol frame
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/antiquelasergun.rsi
+    layers:
+    - state: frame_0
+      map: [ "enum.ConstructionVisuals.Layer" ]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          wiresMissing: { state: frame_0 }
+          casterMissing: { state: frame_1 }
+          casterUnsecured: { state: frame_2 }
+          caseMissing: { state: frame_2 }
+  - type: Item
+    size: 10
+  - type: Construction
+    graph: WeaponAntiqueLaser
+    node: wiresMissing
+
+- type: entity
+  parent: BaseItem
+  id: LaserCannonFrame
+  name: laser cannon frame
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
+    layers:
+    - state: frame_0
+      map: [ "enum.ConstructionVisuals.Layer" ]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          wiresMissing: { state: frame_0 }
+          casterMissing: { state: frame_1 }
+          casterUnsecured: { state: frame_2 }
+          caseMissing: { state: frame_2 }
+  - type: Item
+    size: 50
+  - type: Construction
+    graph: WeaponLaserCannon
+    node: wiresMissing
+
+- type: entity
+  parent: BaseItem
+  id: LaserCarbineFrame
+  name: laser rifle
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
+    layers:
+    - state: frame_0
+      map: [ "enum.ConstructionVisuals.Layer" ]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          wiresMissing: { state: frame_0 }
+          casterMissing: { state: frame_1 }
+          casterUnsecured: { state: frame_2 }
+          caseMissing: { state: frame_2 }
+  - type: Item
+    size: 50
+  - type: Construction
+    graph: WeaponLaserCarbine
+    node: wiresMissing
+
+- type: entity
+  parent: BaseItem
+  id: MakeshiftLaserFrame
+  name: makeshift laser pistol frame
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/makeshift.rsi
+    layers:
+    - state: frame_0
+      map: [ "enum.ConstructionVisuals.Layer" ]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          casterMissing: { state: frame_0 }
+          casterUnsecured: { state: frame_1 }
+          wiresMissing: { state: frame_1 }
+  - type: Item
+    size: 10
+  - type: Construction
+    graph: WeaponMakeshiftLaser
+    node: casterMissing
+
+- type: entity
+  parent: BaseItem
+  id: LaserGunFrame
+  name: retro laser blaster frame
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/laser_retro.rsi
+    layers:
+    - state: frame_0
+      map: [ "enum.ConstructionVisuals.Layer" ]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ConstructionVisuals.Key:
+        enum.ConstructionVisuals.Layer:
+          wiresMissing: { state: frame_0 }
+          casterMissing: { state: frame_1 }
+          casterUnsecured: { state: frame_2 }
+  - type: Item
+    size: 10
+  - type: Construction
+    graph: WeaponLaserGun
+    node: wiresMissing
+
+- type: entity
+  parent: BaseItem
+  id: PistolViperFrame
+  name: viper frame
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Pistols/viper.rsi
+    layers:
+    - state: frame
+  - type: Item
+    size: 5
+  - type: Construction
+    graph: WeaponPistolViper
+    node: frame
+
+- type: entity
+  parent: BaseItem
+  id: PistolCobraFrame
+  name: cobra frame
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Pistols/cobra.rsi
+    layers:
+    - state: frame
+  - type: Item
+    size: 5
+  - type: Construction
+    graph: WeaponPistolCobra
+    node: frame
+
+- type: entity
+  parent: BaseItem
+  id: PistolMk58Frame
+  name: mk 58 frame
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
+    state: frame
+  - type: Item
+    size: 5
+  - type: Construction
+    graph: WeaponPistolMk58
+    node: frame
