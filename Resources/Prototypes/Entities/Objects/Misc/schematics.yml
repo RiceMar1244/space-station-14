@@ -4,7 +4,7 @@
   name: schematic
   abstract: true
   components:
-  - type: Schematic
+  - type: StartItemConstructionOnActivate
   - type: Item
     size: 10
   - type: Sprite
@@ -47,7 +47,7 @@
       map: ["unfoldedLayer"]
     - state: plan_pka
       map: ["planLayer"]
-  - type: Schematic
+  - type: StartItemConstructionOnActivate
     prototype: WeaponProtoKineticAccelerator
 
 - type: entity
@@ -66,7 +66,7 @@
       map: ["unfoldedLayer"]
     - state: plan_lasercarbine
       map: ["planLayer"]
-  - type: Schematic
+  - type: StartItemConstructionOnActivate
     prototype: WeaponLaserCarbine
 
 - type: entity
@@ -85,7 +85,7 @@
       map: ["unfoldedLayer"]
     - state: plan_advancedlaser
       map: ["planLayer"]
-  - type: Schematic
+  - type: StartItemConstructionOnActivate
     prototype: WeaponAdvancedLaser
 
 - type: entity
@@ -104,5 +104,5 @@
       map: ["unfoldedLayer"]
     - state: plan_lasercannon
       map: ["planLayer"]
-  - type: Schematic
+  - type: StartItemConstructionOnActivate
     prototype: WeaponLaserCannon

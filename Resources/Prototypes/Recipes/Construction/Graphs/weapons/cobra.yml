@@ -31,7 +31,7 @@
         doAfter: 2
 
   - node: cobra
-    entity: WeaponPistolCobra
+    entity: WeaponPistolCobraEmpty
     edges:
     - to: frame
       completed:

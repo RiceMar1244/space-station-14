@@ -31,7 +31,7 @@
         doAfter: 2
 
   - node: mk58
-    entity: WeaponPistolMk58
+    entity: WeaponPistolMk58Empty
     edges:
     - to: frame
       completed:
