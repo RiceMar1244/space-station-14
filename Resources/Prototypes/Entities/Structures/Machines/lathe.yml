@@ -256,7 +256,6 @@
       - WeaponCrusherDagger
       - WeaponForceGun
       - WeaponProtoKineticAccelerator
-      - ProtoKineticCharger
       - WeaponTetherGun
       - WeaponGrapplingGun
       - ClothingBackpackHolding
@@ -266,6 +265,8 @@
       - JawsOfLife
       - ClothingEyesGlassesChemical
       - RayCaster
+      - ProtoKineticCharger
+      - SchematicProtoKineticAccelerator
   - type: EmagLatheRecipes
     emagDynamicRecipes:
       - ExplosivePayload
@@ -565,6 +566,9 @@
       - WeaponLaserCannon
       - WeaponXrayCannon
       - WeaponTaser
+      - SchematicLaserCarbine
+      - SchematicAdvancedLaser
+      - SchematicLaserCannon
   - type: MaterialStorage
     whitelist:
       tags:
@@ -862,9 +866,11 @@
     whitelist:
       tags:
       - Raw
+      - Wooden
   - type: Lathe
     idleState: base_machine
     runningState: base_machine_processing
     canEjectStoredMaterials: false
     staticRecipes:
     - MaterialSheetMeat
+    - SheetPaper

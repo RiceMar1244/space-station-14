@@ -16,6 +16,7 @@
         { "name": "plan_pka" },
         { "name": "plan_lasercarbine" },
         { "name": "plan_advancedlaser" },
-        { "name": "plan_lasercannon" }
+        { "name": "plan_lasercannon" },
+        { "name": "plan_makeshiftlaser" }
     ]
 }

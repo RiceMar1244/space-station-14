@@ -11,8 +11,7 @@
     sprite: Objects/Misc/schematics.rsi
 
 - type: entity
-  parent: BaseSchematic
-  id: BaseSchematicFoldable
+  id: SchematicFoldable
   abstract: true
   components:
   - type: Foldable
@@ -32,8 +31,8 @@
           False: {visible: true}
 
 - type: entity
-  parent: BaseSchematicFoldable
-  id: ProtoKineticAcceleratorSchematic
+  parent: [ BaseSchematic, SchematicFoldable]
+  id: SchematicProtoKineticAccelerator
   name: proto-kinetic accelerator schematic
   description: A schematic for building a proto-kinetic accelerator using a proto-kinetic charger. The first step is to build a frame for the device using steel. #automate this maybe
   components:
@@ -51,8 +50,8 @@
     prototype: WeaponProtoKineticAccelerator
 
 - type: entity
-  parent: BaseSchematicFoldable
-  id: LaserCarbineSchematic
+  parent: [ BaseSchematic, SchematicFoldable]
+  id: SchematicLaserCarbine
   name: laser rifle schematic
   description: A schematic for building a laser rifle using a ray caster. The first step is to build a frame for the device using steel.
   components:
@@ -70,8 +69,8 @@
     prototype: WeaponLaserCarbine
 
 - type: entity
-  parent: BaseSchematicFoldable
-  id: AdvancedLaserSchematic
+  parent: [ BaseSchematic, SchematicFoldable]
+  id: SchematicAdvancedLaser
   name: advanced laser pistol schematic
   description: A schematic for building an advanced laser pistol using a ray caster. The first step is to build a frame for the device using steel.
   components:
@@ -89,8 +88,8 @@
     prototype: WeaponAdvancedLaser
 
 - type: entity
-  parent: BaseSchematicFoldable
-  id: LaserCannonSchematic
+  parent: [ BaseSchematic, SchematicFoldable]
+  id: SchematicLaserCannon
   name: laser cannon schematic
   description: A schematic for building a laser cannon using a ray caster. The first step is to build a frame for the device using steel.
   components:
@@ -106,3 +105,22 @@
       map: ["planLayer"]
   - type: StartItemConstructionOnActivate
     prototype: WeaponLaserCannon
+
+- type: entity
+  parent: [ BaseSchematic, SchematicFoldable]
+  id: SchematicMakeshiftLaser
+  name: makeshift laser pistol schematic
+  description: A schematic for building a makeshift laser pistol using a ray caster. The first step is to build a frame for the device using steel.
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/schematics.rsi
+    layers:
+    - state: sheet-folded_nanotrasen
+      map: ["foldedLayer"]
+      visible: false
+    - state: sheet-unfolded_nanotrasen
+      map: ["unfoldedLayer"]
+    - state: plan_makeshiftlaser
+      map: ["planLayer"]
+  - type: StartItemConstructionOnActivate
+    prototype: WeaponMakeshiftLaser

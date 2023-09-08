@@ -11,6 +11,7 @@
   cost: 5000
   recipeUnlocks:
   - WeaponProtoKineticAccelerator
+  - SchematicProtoKineticAccelerator
   # These are roundstart but not replenishable for salvage
   - WeaponCrusher
   - WeaponCrusherDagger
@@ -65,6 +66,8 @@
   recipeUnlocks:
   - WeaponLaserCarbine
   - WeaponAdvancedLaser
+  - SchematicLaserCarbine
+  - SchematicAdvancedLaser
   - RayCaster
 
 - type: technology
@@ -100,6 +103,7 @@
   cost: 10000
   recipeUnlocks:
   - WeaponLaserCannon
+  - SchematicLaserCannon
 
 - type: technology
   id: WaveParticleHarnessing
