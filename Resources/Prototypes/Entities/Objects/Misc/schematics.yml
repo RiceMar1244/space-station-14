@@ -4,9 +4,8 @@
   name: schematic
   abstract: true
   components:
-  - type: StartItemConstructionOnActivate
+  - type: Schematic
   - type: Item
-    size: Small
   - type: Sprite
     sprite: Objects/Misc/schematics.rsi
   - type: Tag
