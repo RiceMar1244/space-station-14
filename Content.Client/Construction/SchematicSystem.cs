@@ -2,6 +2,7 @@ using Content.Shared.Interaction;
 using Content.Shared.Construction;
 using Content.Shared.Construction.Prototypes;
 using Robust.Shared.Prototypes;
+using Content.Shared.Foldable;
 
 namespace Content.Client.Construction;
 
@@ -29,6 +30,7 @@ public sealed class SchematicSystem : EntitySystem
     public bool TryStartConstruction(EntityUid uid, SchematicComponent component)
     {
         if (component.Prototype == null || _constructionSystem == null) return false;
+        if (TryComp<FoldableComponent>(uid, out var foldable) && foldable.IsFolded) return false;
 
         if ((_prototypeManager.Index<ConstructionPrototype>(component.Prototype)).Type == ConstructionType.Item)
         {
