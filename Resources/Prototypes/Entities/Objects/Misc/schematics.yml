@@ -1,7 +1,6 @@
 - type: entity
   parent: BaseItem
   id: BaseSchematic
-  name: schematic
   abstract: true
   components:
   - type: Schematic
