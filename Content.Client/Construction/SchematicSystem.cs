@@ -5,7 +5,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Client.Construction;
 
-public sealed class StartItemConstructionOnActivateSystem : EntitySystem
+public sealed class SchematicSystem : EntitySystem
 {
     [Dependency] private readonly ConstructionSystem _constructionSystem = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
@@ -14,10 +14,10 @@ public sealed class StartItemConstructionOnActivateSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<StartItemConstructionOnActivateComponent, ActivateInWorldEvent>(OnActivate);
+        SubscribeLocalEvent<SchematicComponent, ActivateInWorldEvent>(OnActivate);
     }
 
-    private void OnActivate(EntityUid uid, StartItemConstructionOnActivateComponent component, ActivateInWorldEvent args)
+    private void OnActivate(EntityUid uid, SchematicComponent component, ActivateInWorldEvent args)
     {
         if (args.Handled)
             return;
@@ -26,7 +26,7 @@ public sealed class StartItemConstructionOnActivateSystem : EntitySystem
         args.Handled = true;
     }
 
-    public bool TryStartConstruction(EntityUid uid, StartItemConstructionOnActivateComponent component)
+    public bool TryStartConstruction(EntityUid uid, SchematicComponent component)
     {
         if (component.Prototype == null || _constructionSystem == null) return false;
 
