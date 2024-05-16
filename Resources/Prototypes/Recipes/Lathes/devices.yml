@@ -213,8 +213,8 @@
     Silver: 100
 
 - type: latheRecipe
-  id: WeaponProtoKineticBurster
-  result: WeaponProtoKineticBurster
+  id: WeaponProtoKineticSidearm
+  result: WeaponProtoKineticSidearm
   category: Weapons
   completetime: 5
   materials:

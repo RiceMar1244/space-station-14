@@ -21,37 +21,36 @@
 
 - type: entity
   name: proto-kinetic burster
-  id: WeaponProtoKineticBurster
+  id: WeaponProtoKineticSidearm
   parent: WeaponProtoKineticAcceleratorBase
-  description: A collapsible version-B model of the PKA that compromises recharge speed for the sake of fitting more charge capacity. This device is the definition of a backup plan.
+  description: A highly collapsible sidearm version of the PKA.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Basic/kinetic_burster.rsi
+    sprite: Objects/Weapons/Guns/Basic/kinetic_sidearm.rsi
   - type: Item
-    sprite: Objects/Weapons/Guns/Basic/kinetic_burster.rsi
+    sprite: Objects/Weapons/Guns/Basic/kinetic_sidearm.rsi
     size: Normal
     storedSprite:
-      sprite: Objects/Weapons/Guns/Basic/kinetic_burster.rsi
+      sprite: Objects/Weapons/Guns/Basic/kinetic_sidearm.rsi
       state: storage
   - type: Gun
-    fireRate: 6
-    selectedMode: Burst
+    fireRate: 0.5
+    selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    - Burst
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/kinetic_burster.ogg
+      path: /Audio/Weapons/Guns/Gunshots/kinetic_light.ogg
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 10
-    rechargeCount: 3
+    rechargeCooldown: 0.75
+    rechargeCount: 1
     rechargeSound:
       path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg
   - type: BasicEntityAmmoProvider
-    proto: BulletKineticBurst
-    capacity: 9
-    count: 9
+    proto: BulletKineticLight
+    capacity: 1
+    count: 1
   - type: Clothing
-    sprite: Objects/Weapons/Guns/Basic/kinetic_burster.rsi
+    sprite: Objects/Weapons/Guns/Basic/kinetic_sidearm.rsi
     quickEquip: false
     slots:
     - suitStorage
