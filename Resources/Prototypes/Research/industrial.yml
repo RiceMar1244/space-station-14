@@ -83,6 +83,7 @@
   - PortableGeneratorPacmanMachineCircuitboard
   - PortableGeneratorSuperPacmanMachineCircuitboard
   - PortableGeneratorJrPacmanMachineCircuitboard
+  - PowerComputerCircuitboard
   - SolarControlComputerCircuitboard
   - SolarTrackerElectronics
   - EmitterCircuitboard
